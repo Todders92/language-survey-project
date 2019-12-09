@@ -2,7 +2,7 @@
 
 // Front end logic below:
 $(document).ready(function() {
-  $("form#test").submit(function(event) {
+  $("form#survey").submit(function(event) {
     var question1 = parseInt($("select#question1").val());
     var question2 = parseInt($("select#question2").val());
     var question3 = parseInt($("select#question3").val());
@@ -13,10 +13,11 @@ $(document).ready(function() {
     if (score >= 7) {
       var answer = "correct"
     } else if (score > 1 && score <= 6) {
-      var answer = "doubting the effectivness of this survey"
-    }
-    else {
-      var answer = "incorrect"
+      var answer = "JQuery"
+    } else if (score > 2 && score <= 5) {
+      var answer = "Ruby"
+    } else {
+      var answer = "python"
     }
     $("#answer").text(answer);
     $("#results").show();
