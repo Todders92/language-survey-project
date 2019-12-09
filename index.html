@@ -17,6 +17,8 @@
         <p>Many people arent sure what coding language is right for them when first learning how to program. fill out the survey below to find which coding language is right for you!</p>
         <form id="survey">
           <div class="panel panel-info">
+          <label for="name">Enter your name below</label><br>
+          <input id="name" type="text"><br>
           <label for="question1">Do you think this survey will be helpful?</label><br>
           <select id="question1">
               <option value="4">Yes</option>
@@ -60,7 +62,9 @@
           <button class="btn btn-success"type="submit">find out!</button>
         </form>
         <div id="results">
-          <p>The coding language that best suits you is <span id="answer"></span></p>
+          <div class="panel panel-info">
+            <p><span class="name"></span>, thank you for completeing the survey above! the coding language that best suits you is <span id="answer"></span></p>
+          </div>
         </div>
       </div>
     </div>
