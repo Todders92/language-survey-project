@@ -32,7 +32,7 @@ $(document).ready(function() {
       $("#jquery").hide();
       $("#ruby").show();
       $("#python").hide();
-    } else if (score < 5 && score <= 11) {
+    } else if (score > 7 && score <= 11) {
       var answer = "Rust"
       $("#css").hide();
       $("#rust").show();
@@ -40,7 +40,7 @@ $(document).ready(function() {
       $("#ruby").hide();
       $("#python").hide();
     }
-    else {
+    else if (score > 1 && score <=6) {
       var answer = "Python"
       $("#css").hide();
       $("#rust").hide();
