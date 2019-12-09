@@ -4,3 +4,18 @@
 .background {
   background-color: #6EA8FB;
 }
+#css {
+  display: none;
+}
+#jquery {
+  display: none;
+}
+#rust {
+  display: none;
+}
+#ruby {
+  display: none;
+}
+#python {
+  display: none;
+}

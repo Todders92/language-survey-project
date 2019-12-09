@@ -13,15 +13,40 @@ $(document).ready(function() {
     var score = help + preference + animals + reading + coding + tv
     if (score >= 20) {
       var answer = "CSS"
+      $("#css").show();
+      $("#rust").hide();
+      $("#jquery").hide();
+      $("#ruby").hide();
+      $("#python").hide();
     } else if (score > 16 && score <= 19) {
       var answer = "JQuery"
+      $("#css").hide();
+      $("#rust").hide();
+      $("#jquery").show();
+      $("#ruby").hide();
+      $("#python").hide();
     } else if (score > 12 && score <= 15) {
       var answer = "Ruby"
+      $("#css").hide();
+      $("#rust").hide();
+      $("#jquery").hide();
+      $("#ruby").show();
+      $("#python").hide();
     } else if (score < 5 && score <= 11) {
-      var answer = "rust"
+      var answer = "Rust"
+      $("#css").hide();
+      $("#rust").show();
+      $("#jquery").hide();
+      $("#ruby").hide();
+      $("#python").hide();
     }
     else {
-      var answer = "python"
+      var answer = "Python"
+      $("#css").hide();
+      $("#rust").hide();
+      $("#jquery").hide();
+      $("#ruby").hide();
+      $("#python").show();
     }
     $(".name").text(name);
     $("#answer").text(answer);
