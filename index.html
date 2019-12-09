@@ -8,28 +8,56 @@
     <title>Language Survey</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Survey Time!</h1>
-      <h2>fill out the survey below to find what kind of programming language would best suit you to learn</h2>
-      <form id="test">
-        <label for="question1">will this survey work?</label>
-        <select id="question1">
-          <option value="4">yes</option>
-          <option value="3">maybe</option>
-          <option value="2">doubt it</option>
-          <option value="1">no</option>
-        </select><br>
-        <label for="question2">will this survey work?</label>
-        <select id="question2">
-          <option value="4">yes</option>
-          <option value="3">maybe</option>
-          <option value="2">doubt it</option>
-          <option value="1">no</option>
-        </select><br>
-        <button class="btn btn-success"type="submit">find out!</button>
-      </form>
-      <div id="results">
-        <p>turns out you were <span id="answer"></span></p>
+    <div class="background">
+      <div class="container">
+        <h1>Coding survey</h1>
+        <h2>How to find what language is right for you</h2>
+        <p>Many people arent sure what coding language is right for them when first learning how to program. fill out the survey below to find which coding language is right for you!</p>
+        <form id="test">
+          <label for="question1">Do you think this survey will be helpful?</label><br>
+          <select id="question1">
+            <option value="4">Yes</option>
+            <option value="3">Maybe</option>
+            <option value="2">Doubt it</option>
+            <option value="1">No</option>
+            <option value="0">Not sure</option>
+          </select><br>
+          <label for="question2">Do you prefer fuction over form?</label><br>
+          <select id="question2">
+            <option value="4">Yes</option>
+            <option value="3">No, I prefer things to look good</option>
+          </select><br>
+          <label for="question3">Do you prefer cats or dogs</label><br>
+          <select id="question3">
+            <option value="4">Cats</option>
+            <option value="3">Dogs</option>
+          </select><br>
+          <label for="question4">On average, how many hours do you spend reading per week?</label><br>
+          <select id="question4">
+            <option value="4">Less than an hour</option>
+            <option value="3">1-2 hours</option>
+            <option value="2">2-3 hours</option>
+            <option value="1">More than 3</option>
+          </select><br>
+          <label for="question5">do you enjoy coding?</label><br>
+          <select id="question5">
+            <option value="4">yes</option>
+            <option value="3">maybe</option>
+            <option value="2">doubt it</option>
+            <option value="1">no</option>
+          </select><br>
+          <label for="question6">On average, how many hours do you spend watching TV per day</label><br>
+          <select id="question6">
+            <option value="1">Less than an hour</option>
+            <option value="2">1-2 hours</option>
+            <option value="3">2-3 hours</option>
+            <option value="4">More than 3</option>
+          </select><br><br>
+          <button class="btn btn-success"type="submit">find out!</button>
+        </form>
+        <div id="results">
+          <p>turns out you were <span id="answer"></span></p>
+        </div>
       </div>
     </div>
   </body>
